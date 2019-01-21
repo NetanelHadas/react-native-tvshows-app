@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import axios from 'axios';
+import ShowDetail from './ShowDetail';
 
 class ShowList extends Component {
     state = { shows: [] };
@@ -11,9 +12,9 @@ class ShowList extends Component {
     }
 
     renderShows() {
-        return this.state.shows.map(show =>
-            <Text key={show.show.id}>{show.score}</Text>
-        );
+        return this.state.shows.map(show => (
+          <ShowDetail key={show.show.id} score={show.score} show={show.show} />
+        ));
     }
     
     render() {
