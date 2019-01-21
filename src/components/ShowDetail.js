@@ -25,7 +25,9 @@ const ShowDetail = ({ show }) => {
         </CardSection>
 
         <CardSection>
-            <Button />
+            <Button onPress={() => console.log(name)}>
+                Show Details
+            </Button>
         </CardSection>
     </Card>
   );          
