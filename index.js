@@ -1,9 +1,14 @@
 import React from 'react';
-import { Text, AppRegistry } from 'react-native';
+import { AppRegistry, View } from 'react-native';
+import { Header } from './src/components/common/Header';
+import ShowList from './src/components/ShowList';
 
 const App = () => {
     return (
-        <Text>Some Text</Text>
+        <View>
+            <Header headerText={'Shows'} />
+            <ShowList />
+        </View>
     );
 };
 
