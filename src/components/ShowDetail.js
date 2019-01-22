@@ -26,7 +26,7 @@ const ShowDetail = ({ show }) => {
         </CardSection>
 
         <CardSection>
-            <Button onPress={() => Actions.showinfo({ show })}>
+            <Button onPress={() => Actions.showinfo({ show, title: name })}>
                 Show Details
             </Button>
         </CardSection>
