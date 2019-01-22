@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, Image } from 'react-native';
-import { Card, CardSection, Button } from "./common";
+import { Card, CardSection, Button } from './common';
+import { Actions } from 'react-native-router-flux';
 
 const ShowDetail = ({ show }) => {
   const { name, rating } = show;
@@ -25,7 +26,7 @@ const ShowDetail = ({ show }) => {
         </CardSection>
 
         <CardSection>
-            <Button onPress={() => console.log(name)}>
+            <Button onPress={() => Actions.showinfo({ show })}>
                 Show Details
             </Button>
         </CardSection>

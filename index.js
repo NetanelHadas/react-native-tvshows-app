@@ -1,13 +1,12 @@
 import React from 'react';
 import { AppRegistry, View } from 'react-native';
 import { Header } from './src/components/common/Header';
-import ShowList from './src/components/ShowList';
+import Router from './src/components/Router';
 
 const App = () => {
     return (
         <View style={{ flex: 1 }}>
-            <Header headerText={'Shows'} />
-            <ShowList />
+            <Router />
             <Header headerText={'Netanel Hadas'} />
         </View>
     );
